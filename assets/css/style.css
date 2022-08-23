@@ -304,8 +304,10 @@ nav {
 }
 
 .blogs {
+    padding: 10px 20%;
     display: none;
     position: absolute;
+    background-color: #fff;
     flex-direction: column;
     z-index: 1;
 }
@@ -408,7 +410,6 @@ nav {
 }
 
 .services .icon {
-    box-sizing: border-box;
     width: 62px;
     height: 38px;
     border-right: 1px solid #656565;
@@ -416,8 +417,9 @@ nav {
     border-radius: 5px;
     position: relative;
     transition: all 1s;
-    text-indent: -9999px;
 }
+
+.service {position: relative;}
 
 .icon::before,
 .icon::after {
@@ -428,7 +430,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    content: "\e2ca";
+    content: "";
 }
 
 .icon::before {
@@ -440,18 +442,35 @@ nav {
 }
 
 .icon span {
-    position: relative;
-    text-indent: 0;
+    width: inherit;
+    height: inherit;
+   display: flex;
+   font-family: 'FontAwesome';
+   font-weight: 900;
+    text-indent: -9999px;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon span::before {
-    width: 100%;
-    height: 100%;
-    font-size: 21px;
+    font-size: 32px;
     text-indent: 0;
-    content: '\e2ca';
     float: right;
 }
+
+.service:nth-child(1) .icon span::before {
+    content: '\e2ca';
+}
+
+.service:nth-child(2) .icon span::before {
+    content: '\f135';
+}
+
+.service:nth-child(3) .icon span::before {
+    content: '\f188';
+}
+
+
 
 .service-title {
     padding: 40px 0 28px 0;
