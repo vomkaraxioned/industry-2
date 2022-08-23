@@ -538,6 +538,7 @@ nav {
     margin: 0 auto;
     display: flex;
     background: rgba(0, 0, 0, 0.5) url('../images/form-bg.jpg') center no-repeat;
+    background-size: cover;
     background-blend-mode: multiply;
     flex-direction: column;
     align-items: center;
@@ -668,6 +669,7 @@ li.market:nth-child(2),
     padding-top: 0;
     color: #454545;
     font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -724,6 +726,7 @@ li.market:nth-child(2),
     padding-top: 25px;
     color: #fff;
     font-size: 21px;
+    text-align: center;
 }
 
 
@@ -1047,12 +1050,12 @@ footer {
 }
 
 .connect:first-child {
-    flex-basis: 40%;
+    flex-basis: 42%;
 }
 
 .connect:nth-child(2) {
     flex-basis: 35%;
-    padding: 0 3%;
+    padding: 0 7% 0 3%;
 }
 
 .connect:nth-child(3) {
