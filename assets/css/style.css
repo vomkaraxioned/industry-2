@@ -637,7 +637,7 @@ li.market:nth-child(2),
     padding: 0 3%;
 }
 
-.market figcaption {
+.market h5 {
     padding: 22px 0;
     color: #000;
     font-size: 21px;
@@ -1099,6 +1099,22 @@ footer {
 
 .subscribe {
     flex: 1;
+    position: relative;
+}
+
+.subscribe::before {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: #fff;
+    font-family: 'FontAwesome';
+    font-size: 21px;
+    font-weight: 900;
+    content: '\f061';
+}
+
+.subscribe:hover::before {
+    color: #000;
 }
 
 form[name=subs-email] {
@@ -1110,13 +1126,14 @@ form[name=subs-email] {
 
 input[name=subs-mail],
 input[name=email-submit] {
-    padding: 13px 0;
+    padding: 13px 3%;
     border: none;
     background-color: #fff;
+    color: #000;
 }
 
 input[name=email-submit] {
-    padding: 13.5px 0;
+    padding: 14px 0;
     background-color: #ffa500;
 }
 
@@ -1124,12 +1141,6 @@ input[name=email-submit] {
     font-family: 'FontAwesome';
     font-weight: 900;
     text-indent: -9999px;
-}
-
-input[value=submit] {
-    content: '\f061';
-    text-indent: 0;
-    float: right;
 }
 
 .links {
@@ -1174,6 +1185,14 @@ input[value=submit] {
     content: '\f1b4';
     text-indent: 0;
     float: right;
+}
+
+.link a:hover {
+    color: #ffa500;
+}
+
+input[name=subs-mail]::placeholder {
+    color: #454545;
 }
 
 
