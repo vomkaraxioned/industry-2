@@ -1263,12 +1263,18 @@
                 z-index: 10;
                 transition: all 2s;
             }
+            .banner p {
+                width: 100%;
+            }
             .services {
                 padding: 50px 0;
                 flex-direction: column;
             }
             .service {
                 padding: 25px 0;
+            }
+            .service-description {
+                text-align: justify;
             }
             .request-quote .wrapper-large {
                 flex-direction: column;
@@ -1286,7 +1292,11 @@
             .quote-title,
             .quote-line,
             .quote-description {
+                width: 100%;
                 text-align: center;
+            }
+            .quote-description {
+                text-align: left;
             }
             .form {
                 width: 80%;
@@ -1301,9 +1311,11 @@
             li.market:nth-child(2) {
                 padding: 40px 0;
             }
-            .market h5,
-            .market .description {
+            .market h5 {
                 text-align: center;
+            }
+            .market .description {
+                text-align: justify;
             }
             .data {
                 padding: 80px 0;
@@ -1346,12 +1358,16 @@
                 padding: 40px 0;
             }
             .post>figure {
+                min-height: 215px;
                 max-height: 215px;
+                display: flex;
                 overflow: hidden;
             }
-            .post .post-title,
-            .post-description {
+            .post .post-title {
                 text-align: center;
+            }
+            .post-description {
+                text-align: justify;
             }
             .connects {
                 flex-direction: column;
@@ -1390,5 +1406,73 @@
             .user-name,
             .date {
                 flex: 1;
+            }
+        }
+        /*media query for 540px starts here*/
+        
+        @media only screen and (max-width: 540px) {
+            .banner {
+                padding: 80px 0;
+            }
+            .statistics {
+                flex-direction: column;
+            }
+            .gallery-items {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3),
+            .gallery-item:nth-child(4) {
+                min-height: 366px;
+                max-height: 366px;
+                width: 100%;
+                padding: 0 0 40px 0;
+                display: flex;
+                overflow: hidden;
+            }
+            .gallery-item img {
+                height: auto;
+            }
+            .footer {
+                padding: 100px 0;
+            }
+            .connect:nth-child(3) {
+                padding: 80px 0;
+            }
+            .post img {
+                height: auto;
+            }
+            .user img {
+                height: 100%;
+            }
+        }
+        /*media query for 425px starts here*/
+        
+        @media only screen and (max-width: 425px) {
+            .user-name,
+            .date {
+                flex-basis: 25%;
+            }
+            .clients-fb {
+                padding: 50px 0;
+            }
+            .subscribe::before {
+                left: 0;
+            }
+        }
+        /*media query for 320px starts here*/
+        
+        @media only screen and (max-width: 320px) {
+            .quote-title,
+            .market-title,
+            .gallery-title,
+            .post-title {
+                font-size: 28px;
+            }
+            .post:nth-child(2) {
+                padding: 80px 0;
             }
         }
