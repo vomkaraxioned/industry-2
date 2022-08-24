@@ -1228,4 +1228,6 @@ input[name=subs-mail]::placeholder {
 
 /*media query for 995px starts here*/
 
-@media only screen and (max-width: 995px) {}
+@media only screen and (max-width: 995px) {
+    
+}
