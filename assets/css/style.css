@@ -474,7 +474,7 @@
         }
         
         .quote-title {
-            width: 50%;
+            width: 48%;
             padding: 16px 0 34px 0;
             color: #252525;
             font-size: 36px;
@@ -503,7 +503,7 @@
             padding: 31px;
             margin: 0 auto;
             display: flex;
-            background: rgba(0, 0, 0, 0.5) url('../images/form-bg.jpg') center no-repeat;
+            background: rgba(0, 0, 0, 0.7) url('../images/form-bg.jpg') center no-repeat;
             background-size: cover;
             background-blend-mode: multiply;
             flex-direction: column;
@@ -519,7 +519,7 @@
         }
         
         .form-title {
-            width: 80%;
+            width: 90%;
             padding-bottom: 16px;
             color: #fff;
             font-size: 21px;
@@ -563,7 +563,7 @@
         textarea {
             box-sizing: border-box;
             width: 100%;
-            padding: 0 2%;
+            padding: 5px 2%;
             min-height: 108px;
             border: 1px solid #fff;
             display: block;
@@ -755,7 +755,7 @@
         
         .feedback {
             padding: 125px 0 116px 0;
-            background: rgba(0, 0, 0, 0.5) url('../images/furnace.jpg') center no-repeat;
+            background: rgba(0, 0, 0, 0.7) url('../images/furnace.jpg') center no-repeat;
             background-size: cover;
             background-blend-mode: multiply;
         }
