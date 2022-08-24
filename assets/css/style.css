@@ -1222,6 +1222,9 @@
             .user-name {
                 padding: 0 2%;
             }
+            .date {
+                flex-basis: 15%;
+            }
             .subscribe::before {
                 left: 5%;
             }
