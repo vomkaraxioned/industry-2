@@ -940,7 +940,7 @@
             padding: 10px 0;
             border-bottom: 1px solid #cdcdcd;
             display: flex;
-            justify-content: center;
+            /* justify-content: center; */
             align-items: center;
         }
         
@@ -953,7 +953,7 @@
         .date,
         .likes,
         .comments {
-            padding: 0 25% 0 2%;
+            padding: 0 8% 0 2%;
             color: #454545;
             font-size: 12px;
         }
@@ -961,7 +961,13 @@
         .date,
         .likes,
         .comments {
-            padding-right: 3%;
+            padding-right: 2%;
+        }
+        
+        .likes,
+        .comments {
+            flex: 1;
+            text-align: center;
         }
         
         .post .post-title {
@@ -1186,4 +1192,35 @@
         /*media query starts*/
         /*media query for 995px starts here*/
         
-        @media only screen and (max-width: 995px) {}
+        @media only screen and (max-width: 995px) {
+            .description {
+                flex-basis: 60%;
+            }
+            .quote-title {
+                width: 95%;
+            }
+            .form {
+                padding: 0 3%;
+            }
+            .stat {
+                padding-right: 7%;
+            }
+            .fb-block figure {
+                max-height: 800px;
+            }
+            .client-name {
+                flex-basis: 100%;
+            }
+            .rating {
+                padding-right: 0;
+            }
+            .user-name {
+                padding: 0 2%;
+            }
+            .subscribe::before {
+                left: 5%;
+            }
+            .connect:first-child {
+                flex-basis: 35%;
+            }
+        }
